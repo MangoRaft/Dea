@@ -1,0 +1,23 @@
+{
+	"name": "dea",
+	"version": "0.0.1",
+	"description": "Open Source PaaS built on Node.JS - A port of the dea from vcap",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/MangoRaft/Dea.git"
+	},
+	"dependencies": {
+		"raft": "0.4.4",
+		"raft-logger": "*",
+		"raft-spawn": "*",
+		"raft-logger": "*",
+		"mkdirp": "0.3.5"
+	},
+	"bin": {
+		"dea": "./bin/dea.js"
+	},
+	"homepage": "http://raft.mangoraft.com",
+	"author": "Tim <tim.dickinson@mangoraft.com>",
+	"license": "BSD"
+}
