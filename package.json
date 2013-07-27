@@ -9,9 +9,9 @@
 	},
 	"dependencies": {
 		"raft": "0.4.4",
-		"raft-logger": "*",
-		"raft-spawn": "*",
-		"raft-logger": "*",
+		"raft-logger": "0.0.x",
+		"raft-spawn": "0.0.2",
+		"raft-logger": "0.0.x",
 		"mkdirp": "0.3.5"
 	},
 	"bin": {
