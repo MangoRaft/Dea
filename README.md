@@ -11,7 +11,7 @@ Example
 	var Agent = require('./')
 	var raft = require('raft');
 	var path = require('path');
-	process.configPath = __dirname + '/../tests/config.json'
+	process.configPath = '/my-config-dir/config.json'
 	raft.start()
 	
 	/**
