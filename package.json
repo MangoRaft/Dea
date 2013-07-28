@@ -1,6 +1,6 @@
 {
 	"name": "dea",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Open Source PaaS built on Node.JS - A port of the dea from vcap",
 	"main": "index.js",
 	"repository": {
