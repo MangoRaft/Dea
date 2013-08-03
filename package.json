@@ -12,7 +12,8 @@
 		"raft-logger": "0.0.x",
 		"raft-spawn": "0.0.2",
 		"raft-logger": "0.0.x",
-		"mkdirp": "0.3.5"
+		"mkdirp": "0.3.5",
+		"portfinder": "0.2.1"
 	},
 	"bin": {
 		"dea": "./bin/dea.js"
