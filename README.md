@@ -1,7 +1,60 @@
 Dea
 ===
 
-A port of the dea from vcap
+This is a port from ruby to node of the vcap dea.
+
+##Idea
+The idea behind the dea is to manage spawn execution. The process of starting and stopping a runtime environment. It connects to the NATS network to broadcast its availability.
+
+Methods
+-------
+
+### run()
+
+this is used only once to start the dea.
+
+
+Events
+------
+
+The events that are published and subscribed to over the nats network.
+
+
+subscribed
+--------
+##### `dea.status`, `(Object message, String reply)`
+
+Triggered to reply with the status of the dea. This would be use for network wide dea status.
+
+##### `dea.uid.status`, `(Object message, String reply)`
+
+Triggered to reply with the status of the dea. Same as above but for this posific dea.
+
+##### `dea.find.droplet`, `(Object message, String reply)`
+
+Network wide droplet finder.If you don't know what dea the droplet is on then you would use this event.
+
+##### `droplet.status`, `(Object message, String reply)`
+
+Request the status of a droplet.
+
+##### `dea.update`, `(Object message, String reply)`
+
+Update a droplet with the new configuration.
+
+##### `dea.stop`, `(Object message, String reply)`
+
+Stop a running droplet.
+
+##### `dea.uid.start`, `(Object message, String reply)`
+
+Start a droplet on this specific dea
+
+##### `router.start`, `(Object message, String reply)`
+
+The dea will listen for the start of a router to update it with current droplet uris.
+
+
 
 
 Example
