@@ -3,11 +3,10 @@
 var Agent = require('../')
 var raft = require('raft');
 var path = require('path');
-process.configPath = process.argv[2]
 
 raft.start()
 
-var agent = new Agent(raft.config.dea)
+var agent = new Agent()
 
 agent.run();
 
