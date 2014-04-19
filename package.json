@@ -1,6 +1,6 @@
 {
 	"name": "dea",
-	"version": "0.0.2",
+	"version": "0.0.4",
 	"description": "Open Source PaaS built on Node.JS - A port of the dea from vcap",
 	"main": "index.js",
 	"repository": {
@@ -8,7 +8,6 @@
 		"url": "https://github.com/MangoRaft/Dea.git"
 	},
 	"dependencies": {
-		"raft": "0.4.4",
 		"raft-logger": "0.0.x",
 		"raft-spawn": "0.0.X",
 		"raft-logger": "0.0.x",
