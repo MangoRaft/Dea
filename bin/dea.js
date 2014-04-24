@@ -1,20 +1,20 @@
 #!/usr/bin/env node
 
-var Agent = require('../')
+/*
+ *
+ * (C) 2014, MangoRaft.
+ *
+ */
+
+var Agent = require('../');
 var raft = require('raft');
 var path = require('path');
 
-raft.start()
+raft.once('start', function() {
+	var agent = new Agent(process.argv[2]);
+	agent.run();
+});
 
-var agent = new Agent()
+raft.common.printLogo();
 
-agent.run();
-
-raft.common.logo(function(err, logo){
-	if(err){
-		throw err
-	}
-	console.log('   * ')
-	console.log('   * '+logo.split('\n').join('\n   * '))
-	console.log('   * View logger for more infomation.')
-})
+raft.start(process.argv[3]); 

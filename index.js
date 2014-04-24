@@ -1,9 +1,9 @@
 /*
-* (C) 2013, MangoRaft.
-*
-*/
-/**
- * dea
+ *
+ * (C) 2014, MangoRaft.
+ *
  */
+
+
 var dea = module.exports = require('./lib/dea/agent')
 
